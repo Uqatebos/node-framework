@@ -1,0 +1,20 @@
+.cache
+.DS_Store
+.project
+.settings
+.tmproj
+Thumbs.db
+
+# Folders to ignore
+.CVS
+.git
+.hg
+.idea
+.svn
+_copySlidesFromRepo
+.mynewdir
+bower_components
+
+# Node.JS
+node_modules
+npm-debug.log
