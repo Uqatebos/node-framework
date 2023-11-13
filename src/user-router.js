@@ -1,22 +1,15 @@
 import Router from "../framework/Router.js";
-
+import { getUser } from "./user-controller.js";
+import { createUser } from "./user-controller.js";
 
 const router = new Router();
 
-const users = [
-  { id: 1, name: "Gabe" },
-  { id: 2, name: "Aboba" },
-];
-
 router.get("/users", (req, res) => {
-  res.send(users);
+  getUser(req, res);
 });
 
 router.post("/users", (req, res) => {
-  console.log(req.body, "15");
-  const user = req.body;
-  users.push(user);
-  res.send(user);
+  createUser(req, res);
 });
 
 export default router;
